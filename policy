@@ -1,0 +1,16 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject",
+                "logs:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::{NOM_BUCKET}/*",
+                "arn:aws:logs:*:{ID_DU_COMPTE}:log-group:*"
+            ]
+        }
+    ]
+}
