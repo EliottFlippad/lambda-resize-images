@@ -1,0 +1,13 @@
+[
+    {
+        "Condition": {
+            "HttpErrorCodeReturnedEquals": "404"
+        },
+        "Redirect": {
+            "HostName": "{LIEN_API}",
+            "HttpRedirectCode": "307",
+            "Protocol": "https",
+            "ReplaceKeyPrefixWith": "{CHEMIN_ADDITIONNEL}?key="
+        }
+    }
+]
